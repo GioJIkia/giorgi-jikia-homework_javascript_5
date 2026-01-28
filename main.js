@@ -38,19 +38,10 @@ const sumArr = arr.map((value) =>
   value.reduce((prev, current) => prev + current, 0),
 );
 
-let sum1 = sumArr[0];
-let sum2 = sumArr[1];
-let sum3 = sumArr[2];
+const [sum1, sum2, sum3] = sumArr;
 let totalSum = sumArr.reduce((prev, current) => prev + current, 0);
 console.log(
-  "პირველის ჯამი:",
-  sum1,
-  "მეორის ჯამი:",
-  sum2,
-  "მესამის ჯამი:",
-  sum3,
-  "სრული ჯამი:",
-  totalSum,
+  `პირველი მასივის ჯამი: ${sum1}, მეორე მასივის ჯამი: ${sum2}, მესამე მასივის ჯამი: ${sum3}, ყველა მასივის ჯამი: ${totalSum}`,
 );
 
 //------------------------------------------დავალება-2----------------------------------------------------
